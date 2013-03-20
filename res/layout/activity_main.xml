@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/logTxt"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:text="Click and have a look ^_^" />
+
+    <RelativeLayout
+        android:id="@+id/tabBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioBtn1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@android:drawable/ic_menu_call" />
+
+            <RadioButton
+                android:id="@+id/radioBtn2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawableTop="@android:drawable/ic_menu_help" />
+
+            <RadioButton
+                android:id="@+id/radioBtn3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawableTop="@android:drawable/ic_menu_manage" />
+
+            <RadioButton
+                android:id="@+id/radioBtn4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawableTop="@android:drawable/ic_menu_search" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/cursor"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/darker_gray" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
